@@ -26,19 +26,19 @@
     ],
     "setting": {
         /* 使用API网关触发时停止消息推送 */
-        "stopPushOnAPIGateway": false,
+        "stopPushOnAPIGateway": true,
         /* server酱微信推送 */
         "serverChan": {
             /* 是否启用server酱微信推送 */
-            "enable": false,
+            "enable": true,
             /* 填写server酱旧版SCKEY或新版SendKey */
-            "KEY": ""
+            "KEY": "SCT72110TYjchmBEaPlnoq1S11YaWypKg"
         },
         /* pushPlus微信推送 */
         /* 官网 http://www.pushplus.plus */
         "pushPlus": {
             /* 是否启用pushplus微信推送 */
-            "enable": true,
+            "enable": false,
             /* pushplus的token */
             "pushToken": "52f8b75241b8467e9fddbc5910f01d6e",
             /* 群组编码，为空时发给自己 */
