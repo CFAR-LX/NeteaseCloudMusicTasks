@@ -3,16 +3,16 @@
     "users": [
         {
             /* 填写手机号或邮箱 */
-            "username": "",
+            "username": "19877149459",
             /* 如果使用非中国大陆的手机号登录则需填写 countrycode，其他情况都不用填写 */
             "countrycode": "",
             /* 是否使用md5密码，若为false，请使用原密码，若为true，请使用md5加密后的密码 */
             "md5": false,
             /* 填写密码 */
-            "password": "",
+            "password": "a13367565185",
             /* 填写任意国内IP，否则可能会有无法登录等问题出现，多个账号最好设置不同的IP */
             /* 可填写本机IP，查看方法为：百度搜索ip，填写显示的ip即可 */
-            "X-Real-IP": ""
+            "X-Real-IP": "113.12.6.30"
             /* 若每个账号的任务设置不同,请在下方单独设置 */
             /* ,"setting":{} */
         } /*,{
@@ -26,11 +26,11 @@
     ],
     "setting": {
         /* 使用API网关触发时停止消息推送 */
-        "stopPushOnAPIGateway": true,
+        "stopPushOnAPIGateway": false,
         /* server酱微信推送 */
         "serverChan": {
             /* 是否启用server酱微信推送 */
-            "enable": true,
+            "enable": false,
             /* 填写server酱旧版SCKEY或新版SendKey */
             "KEY": ""
         },
@@ -40,14 +40,14 @@
             /* 是否启用pushplus微信推送 */
             "enable": true,
             /* pushplus的token */
-            "pushToken": "",
+            "pushToken": "52f8b75241b8467e9fddbc5910f01d6e",
             /* 群组编码，为空时发给自己 */
             "topic": ""
         },
         /* Cool Push酷推QQ推送 */
         "CoolPush": {
             /* 是否启用酷推推送 */
-            "enable": true,
+            "enable": false,
             /* 推送方式，如果想要使用多种方式，请用逗号隔开，如["send","group"] */
             /* send:QQ号私人推送, group:QQ群推送, wx:微信推送, email:邮件推送 */
             "method": [
@@ -59,7 +59,7 @@
         /* 企业微信推送 */
         "WeCom": {
             /* 是否启用企业微信推送 */
-            "enable": true,
+            "enable": false,
             /* 企业ID，登录企业微信后在管理后台“我的企业”－“企业信息”下查看 */
             "corpid": "",
             /* 应用ID，在“应用管理”里，点进相应的应用可查看 */
@@ -82,9 +82,9 @@
             },
             /* 发布3条动态 */
             "发布动态": {
-                "enable": false,
+                "enable": true,
                 /* 自定义要分享的歌单id，用逗号隔开，分享时随机选取一个，若为空，则从每日推荐歌单中随机选取 */
-                "id": [],
+                "id": [7316996658,6939316743,5029425877],
                 /* 自定义动态内容，用逗号隔开，分享时随机选取一个 */
                 "msg": [
                     "每日分享",
@@ -95,9 +95,9 @@
                 "delete": true
             },
             "发布主创说": {
-                "enable": false,
+                "enable": true,
                 /* []内填写你自己歌曲的id，如有多首用,隔开，随机挑选一首 */
-                "id": [],
+                "id": [1874222401],
                 /* []内填写要发布的内容，如有多个用,隔开，随机挑选一个 */
                 "msg": [
                     "感谢大家收听"
@@ -106,9 +106,9 @@
                 "delete": true
             },
             "回复粉丝评论": {
-                "enable": false,
+                "enable": true,
                 /* []内填写你自己歌曲的id，如有多首用,隔开，随机挑选一首 */
-                "id": [],
+                "id": [1874222401],
                 /* []内填写要回复的内容，如有多个用,隔开，随机挑选一个 */
                 "msg": [
                     "感谢收听"
@@ -149,7 +149,7 @@
             /* 分享歌单 */
             "发布动态": {
                 /* 是否开启任务 */
-                "enable": false,
+                "enable": true,
                 "taskName": "发布动态",
                 /* 自定义要分享的歌单id，用逗号隔开，分享时随机选取一个，若为空，则从每日推荐歌单中随机选取 */
                 "id": [],
@@ -174,7 +174,7 @@
                 "enable": true,
                 "taskName": "云贝推歌",
                 /* 要推荐的歌曲id，随机选取一个，如[65528, 64634] */
-                "songId": [],
+                "songId": [1409275919,1862710350],
                 /* 推荐的云贝数量 */
                 "yunbeiNum": 10,
                 /* 推荐理由，随机选取一个*/
@@ -187,10 +187,10 @@
             /* 发布Mlog：根据填写的歌曲ID，自动下载歌曲的专辑图，并上传 */
             "发布Mlog": {
                 /* 是否开启任务 */
-                "enable": false,
+                "enable": true,
                 "taskName": "发布Mlog",
                 /* 填写歌曲id，随机选取一个，如[65528, 64634] */
-                "songId": [],
+                "songId": [1409275919,1862710350],
                 /* 动态内容，随机选取一个，其中$artist会被替换为歌手名，$song会被替换为歌曲名 */
                 "text": [
                     "分享$artist的歌曲: $song",
@@ -206,7 +206,7 @@
         "vip_task": {
             "创建共享歌单": {
                 /* 是否开启任务 */
-                "enable": false,
+                "enable": true,
                 "taskName": "创建共享歌单",
                 /* 自定义歌单名，用逗号隔开，随机选取一个 */
                 "name": [
@@ -223,12 +223,12 @@
             "play_playlists": {
                 "enable": false,
                 /* 歌单id,用逗号隔开,如 [5279371062,5279377564] */
-                "playlist_ids": [],
+                "playlist_ids": [7316996658],
                 /* 播放次数 */
                 "times": 1
             }
         },
         /* 在网易云音乐中关注作者 */
-        "follow": true
+        "follow": false
     }
 }
